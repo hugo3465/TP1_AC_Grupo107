@@ -1,0 +1,32 @@
+Cod_Produto;Produto;Dimensoes;Preço;Cod_Material;Descrição;Quantidade;Unidade
+P00001;Movel WC ;80x120x60;99;M0001;Tubo Cola 10GR;1;UN
+;;;;M0002;Parafuso 30MM;4;UN
+;;;;M0003;Bucha 30MM;4;UN
+;;;;M0004;Base 80x60;2;UN
+;;;;M0005;Pés;4;UN
+;;;;M0006;Porta 80x120;1;UN
+;;;;M0007;Fundo 80x120;1;UN
+;;;;M0008;Laterais 60x120;2;UN
+;;;;M0009;Cavilhas;24;UN
+;;;;M0023;Prateleiras 75x55;3;UN
+P00002;Cómoda 3 Gavetas ;160x120x60;299;M0001;Tubo Cola 10GR;4;UN
+;;;;M0002;Parafuso 30MM;8;UN
+;;;;M0003;Bucha 30MM;8;UN
+;;;;M0008;Laterais 60x120;2;UN
+;;;;M0010;Fundo 160x120;1;UN
+;;;;M0011;Base 160x60;2;UN
+;;;;M0012;Ferragem 40CM;3;PAR
+;;;;M0013;Fundo 155x35;3;UN
+;;;;M0014;Laterais 55x35;6;UN
+;;;;M0015;Frente 160x38;3;UN
+;;;;M0016;Base 155x55;3;UN
+P00003;Mesa de Cabeçeira ;60x60x60;149;M0001;Tubo Cola 10GR;2;UN
+;;;;M0002;Parafuso 30MM;4;UN
+;;;;M0003;Bucha 30MM;4;UN
+;;;;M0017;Laterais 60x60;2;UN
+;;;;M0018;Base 60x60;3;UN
+;;;;M0012;Ferragem 40CM;2;PAR
+;;;;M0018;Fundo 55x25;2;UN
+;;;;M0020;Laterais 55x25;4;UN
+;;;;M0021;Frente 60x28;2;UN
+;;;;M0022;Base 55x55;2;UN
