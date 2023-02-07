@@ -246,26 +246,36 @@ void listarEncomendas(const Encomendas *encomendas, const Clientes *clientes, co
 
     int indiceCliente;
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < encomendas->contador; i++) {
         indiceCliente = procurarCliente(clientes, encomendas->encomenda[i].codCliente);
         imprimirEncomenda(&encomendas->encomenda[i], &clientes->cliente[indiceCliente], produtos);
     }
+    
+    printf("================================="); // separador
 }
 
 void listarEncomendasCliente(const Encomendas *encomendas, const Cliente *cliente, const Produtos *produtos) {
     system("clear || cls");
-
+    
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < encomendas->contador; i++) {
         if(strcmp(encomendas->encomenda[i].codCliente, cliente->codCliente) == 0) {
             imprimirEncomenda(&encomendas->encomenda[i], cliente, produtos);
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void listarEncomendasPorEstado(const Encomendas *encomendas, const Clientes *clientes, Produtos *produtos, const Estado estado) {
     system("clear || cls");
     
     int indiceCliente;
+    
+    printf("=================================\n"); // separador
     
     for (int i = 0; i < encomendas->contador; i++) {
         indiceCliente = procurarCliente(clientes, encomendas->encomenda[i].codCliente); // Procurar cliente para madar para o imprimir
@@ -276,6 +286,8 @@ void listarEncomendasPorEstado(const Encomendas *encomendas, const Clientes *cli
             imprimirEncomenda(&encomendas->encomenda[i], &clientes->cliente[indiceCliente], produtos);
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void lerEncomendas(Encomendas *encomendas, const char *ficheiro) {

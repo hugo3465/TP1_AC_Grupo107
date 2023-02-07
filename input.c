@@ -129,9 +129,13 @@ void criarCodigo(char tipoCod, char *array, int numCaracteres) {
 void printArrayListagens(Listagens *listagens, int size) {
     int i;
     
+    printf("=================================\n"); // separador
+    
     for (i = 0; i < size; i++) {
-        printf("%s\n", listagens[i].nome);
+        printf("\t%dº: %s\n", i + 1, listagens[i].nome);
     }
+    
+    printf("================================="); // separador
 }
 
 void ordenarListagens(Listagens *listagens, int size) {

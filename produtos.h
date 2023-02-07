@@ -261,7 +261,7 @@ extern "C" {
      * @param produtos
      * @param materiais
      */
-    void produtosMaisVendidos(Produtos * produtos, Materiais * materiais);
+    void produtosMaisVendidos(Produtos * produtos);
     
 
     /**

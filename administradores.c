@@ -130,13 +130,16 @@ int alterarAdministrador(Administradores *administradores, char *codAdministrado
 void listarAdministradores(const Administradores *administradores) {
     system("clear || cls");
 
-
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < administradores->contador; i++) {
         printf("CodAdministrador: %s\n", administradores->administrador[i].codAdministrador);
         printf("Nome: %s\n", administradores->administrador[i].nome);
 
         printf("\n\n");
     }
+    
+    printf("================================="); // separador
 }
 
 

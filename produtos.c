@@ -236,7 +236,6 @@ void imprimirProduto(const Produto *produto, const Materiais *materiais) {
     printf("CodProduto: %s\n", produto->codProduto);
     printf("Nome: %s\n", produto->nome);
     printf("Dimensoes: %dx%dx%d\n", produto->dimensoes.comprimento, produto->dimensoes.largura, produto->dimensoes.altura);
-    printf("Vezes Usadas: %d\n", produto->vezesUsadas);
 
     printf("Materiais:\n");
     for (int i = 0; i < produto->quantidadeMateriais; i++) {
@@ -255,26 +254,36 @@ void imprimirProduto(const Produto *produto, const Materiais *materiais) {
 void listarProdutos(const Produtos *produtos, const Materiais *materiais) {
     system("clear || cls");
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < produtos->contador; i++) {
         if (produtos->produto[i].estaRemovido == false) { // listar apenas os produtos que nao estao como removidos
             imprimirProduto(&produtos->produto[i], materiais);
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void listarProdutosApagados(const Produtos *produtos, const Materiais *materiais) {
     system("clear || cls");
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < produtos->contador; i++) {
         if (produtos->produto[i].estaRemovido == true) { // listar apenas os produtos que estao como removidos
             imprimirProduto(&produtos->produto[i], materiais);
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void listarProdutosSemMateriais(const Produtos *produtos) {
     system("clear || cls");
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < produtos->contador; i++) {
         if (produtos->produto[i].estaRemovido == false) { // listar apenas os produtos que nao estao como removidos
             printf("CodProduto: %s\n", produtos->produto[i].codProduto);
@@ -286,9 +295,13 @@ void listarProdutosSemMateriais(const Produtos *produtos) {
             printf("\n\n");
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void listarProdutosPorEstado(const Produtos *produtos, const Materiais *materiais, const Estado estado) {
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < produtos->contador; i++) {
         if (produtos->produto[i].estado == DESATIVO && estado == DESATIVO) {
             imprimirProduto(&produtos->produto[i], materiais);
@@ -296,6 +309,8 @@ void listarProdutosPorEstado(const Produtos *produtos, const Materiais *materiai
             imprimirProduto(&produtos->produto[i], materiais);
         }
     }
+    
+    printf("================================="); // separador
 }
 
 void ordenarProdutosPorVendidos(Produtos *produtos) {
@@ -317,11 +332,11 @@ void ordenarProdutosPorVendidos(Produtos *produtos) {
     }
 }
 
-void produtosMaisVendidos(Produtos * produtos, Materiais * materiais) {
+void produtosMaisVendidos(Produtos * produtos) {
     system("clear || cls");
     
     ordenarProdutosPorVendidos(produtos);
-    listarProdutos(produtos, materiais);
+    listarProdutosSemMateriais(produtos);
 }
 
 void lerProdutos(Produtos *produtos, const char *ficheiro) {

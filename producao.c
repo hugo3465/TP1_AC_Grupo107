@@ -26,10 +26,14 @@ void printEncomendasPorSemana(Encomendas *encomendas, Produtos * produtos, Clien
     
     int weekOfYear = getWeekOfYear(data);
     
+    printf("=================================\n"); // separador
+    
     for (i = 0; i < encomendas->contador; i++) {
         if (getWeekOfYear(&encomendas->encomenda[i].dataEntrega) == weekOfYear) {
             indiceCliente = procurarCliente(clientes, encomendas->encomenda[i].codCliente);
             imprimirEncomenda(&encomendas->encomenda[i], &clientes->cliente[indiceCliente], produtos);
         }
     }
+    
+    printf("================================="); // separador
 }

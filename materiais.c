@@ -131,10 +131,14 @@ void imprimirMaterial(const Material *material) {
 void listarMateriais(const Materiais *materiais) {
     system("clear || cls");
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < materiais->contador; i++) {
         printf("Material %d:\n", i + 1);
         imprimirMaterial(&materiais->material[i]);
     }
+    
+    printf("================================="); // separador
 }
 
 void ordenarMateriaisPorUsados(Materiais * materiais) {

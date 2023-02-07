@@ -170,13 +170,22 @@ void imprimirCliente(const Cliente *cliente) {
 void listarClientes(const Clientes *clientes) {
     system("clear || cls");
 
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < clientes->contador; i++) {
         printf("Cliente %d:\n", i + 1);
         imprimirCliente(&clientes->cliente[i]);
     }
+    
+    printf("================================="); // separador
+    
 }
 
 void listarClientesPorEstado(const Clientes *clientes, const Estado estado) {
+    system("clear || cls");
+    
+    printf("=================================\n"); // separador
+    
     for (int i = 0; i < clientes->contador; i++) {
         if (clientes->cliente[i].estado == DESATIVO && estado == DESATIVO) {
             imprimirCliente(&clientes->cliente[i]);
@@ -184,6 +193,9 @@ void listarClientesPorEstado(const Clientes *clientes, const Estado estado) {
             imprimirCliente(&clientes->cliente[i]);
         }
     }
+    
+    printf("================================="); // separador
+    
 }
 
 void ordenarClientesPorQntEncomenda(Clientes * clientes) {

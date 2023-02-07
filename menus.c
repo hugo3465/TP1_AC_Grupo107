@@ -376,7 +376,7 @@ void menuAdminListagensProdutos(Produtos *produtos, Materiais *materiais) {
                 pause();
                 break;
             case 5:
-                produtosMaisVendidos(produtos, materiais);
+                produtosMaisVendidos(produtos);
                 pause();
                 break;
             case 6:
