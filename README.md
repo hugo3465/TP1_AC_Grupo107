@@ -1,5 +1,5 @@
 # TP1_AC_Grupo107
-Uma aplicação de registo de encomendas criada em C, para a disciplina "Laboratório de Programação" onde deveria ser criado um programa em C que 
+Uma aplicação de registo de encomendas criada em C, para a disciplina "Laboratório de Programação" onde deveria ser criado um programa em C.
 
 Enunciado:
 Na sequência de um contacto realizado com a ESTG, a empresa “Móveis para Todos”
