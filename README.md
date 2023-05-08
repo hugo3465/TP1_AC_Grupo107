@@ -17,6 +17,8 @@ No final, deverá ser possível exportar para ficheiro um resumo dos componentes
 satisfazer as encomendas de uma determinada semana.
 
 ## Membros do Grupo:
-César Castelo
-Hugo Guimarães
-Pedro Pinho
+ * César Castelo
+
+ * Hugo Guimarães
+
+ * Pedro Pinho
