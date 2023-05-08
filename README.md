@@ -15,3 +15,8 @@ Quanto à restante informação, deverá adequar as funcionalidades de acordo co
 descritos neste documento.
 No final, deverá ser possível exportar para ficheiro um resumo dos componentes a usar para
 satisfazer as encomendas de uma determinada semana.
+
+## Membros do Grupo:
+César Castelo
+Hugo Guimarães
+Pedro Pinho
